@@ -1,0 +1,473 @@
+[
+  {
+    "id": "MLB5722813046",
+    "site_id": "MLB",
+    "title": "Nike Air Force 1 '07 Masculino Preto 40 Br",
+    "family_name": null,
+    "seller_id": 2699863826,
+    "category_id": "MLB23332",
+    "user_product_id": null,
+    "official_store_id": null,
+    "price": 560,
+    "base_price": 560,
+    "original_price": null,
+    "inventory_id": null,
+    "currency_id": "BRL",
+    "initial_quantity": 1,
+    "available_quantity": 1,
+    "sold_quantity": 0,
+    "sale_terms": [
+      {
+        "id": "WARRANTY_TYPE",
+        "name": "Tipo de garantia",
+        "value_id": "6150835",
+        "value_name": "Sem garantia",
+        "value_struct": null,
+        "values": [
+          {
+            "id": "6150835",
+            "name": "Sem garantia",
+            "struct": null
+          }
+        ],
+        "value_type": "list"
+      }
+    ],
+    "buying_mode": "buy_it_now",
+    "listing_type_id": "gold_special",
+    "start_time": "2025-09-19T05:50:24.813Z",
+    "stop_time": "2045-09-14T04:00:00.000Z",
+    "end_time": "2045-09-14T04:00:00.000Z",
+    "expiration_time": "2025-12-08T05:50:24.865Z",
+    "condition": "used",
+    "permalink": "https://produto.mercadolivre.com.br/MLB-5722813046-nike-air-force-1-07-masculino-preto-40-br-_JM",
+    "thumbnail_id": "848143-MLB92828777815_092025",
+    "thumbnail": "http://http2.mlstatic.com/D_848143-MLB92828777815_092025-I.jpg",
+    "pictures": [
+      {
+        "id": "848143-MLB92828777815_092025",
+        "url": "http://http2.mlstatic.com/D_848143-MLB92828777815_092025-O.jpg",
+        "secure_url": "https://http2.mlstatic.com/D_848143-MLB92828777815_092025-O.jpg",
+        "size": "333x500",
+        "max_size": "800x1200",
+        "quality": ""
+      },
+      {
+        "id": "899413-MLB92828926457_092025",
+        "url": "http://http2.mlstatic.com/D_899413-MLB92828926457_092025-O.jpg",
+        "secure_url": "https://http2.mlstatic.com/D_899413-MLB92828926457_092025-O.jpg",
+        "size": "333x500",
+        "max_size": "800x1200",
+        "quality": ""
+      },
+      {
+        "id": "733147-MLB92828777817_092025",
+        "url": "http://http2.mlstatic.com/D_733147-MLB92828777817_092025-O.jpg",
+        "secure_url": "https://http2.mlstatic.com/D_733147-MLB92828777817_092025-O.jpg",
+        "size": "333x500",
+        "max_size": "800x1200",
+        "quality": ""
+      },
+      {
+        "id": "678623-MLB92828787605_092025",
+        "url": "http://http2.mlstatic.com/D_678623-MLB92828787605_092025-O.jpg",
+        "secure_url": "https://http2.mlstatic.com/D_678623-MLB92828787605_092025-O.jpg",
+        "size": "333x500",
+        "max_size": "800x1200",
+        "quality": ""
+      }
+    ],
+    "video_id": null,
+    "descriptions": [],
+    "accepts_mercadopago": true,
+    "non_mercado_pago_payment_methods": [],
+    "shipping": {
+      "mode": "me2",
+      "methods": [],
+      "tags": [],
+      "dimensions": null,
+      "local_pick_up": false,
+      "free_shipping": false,
+      "logistic_type": "drop_off",
+      "store_pick_up": false
+    },
+    "international_delivery_mode": "none",
+    "seller_address": {
+      "address_line": "Rua XXI 500",
+      "zip_code": "13051111",
+      "city": {
+        "id": "BR-SP-42",
+        "name": "Campinas"
+      },
+      "state": {
+        "id": "BR-SP",
+        "name": "São Paulo"
+      },
+      "country": {
+        "id": "BR",
+        "name": "Brasil"
+      },
+      "latitude": -0.011223,
+      "longitude": -47.113355,
+      "id": 15231111
+    },
+    "seller_contact": null,
+    "attributes": [
+      {
+        "id": "ADJUSTMENT_TYPES",
+        "name": "Tipos de ajuste",
+        "value_id": "7445558",
+        "value_name": "Cadarços",
+        "values": [
+          {
+            "id": "7445558",
+            "name": "Cadarços",
+            "struct": null
+          }
+        ],
+        "value_type": "string"
+      },
+      {
+        "id": "BRAND",
+        "name": "Marca",
+        "value_id": "14671",
+        "value_name": "Nike",
+        "values": [
+          {
+            "id": "14671",
+            "name": "Nike",
+            "struct": null
+          }
+        ],
+        "value_type": "string"
+      },
+      {
+        "id": "EXTERIOR_MATERIALS",
+        "name": "Materiais do exterior",
+        "value_id": "312072",
+        "value_name": "Couro",
+        "values": [
+          {
+            "id": "312072",
+            "name": "Couro",
+            "struct": null
+          }
+        ],
+        "value_type": "string"
+      },
+      {
+        "id": "FILTRABLE_GENDER",
+        "name": "Gênero filtrável",
+        "value_id": "18549360",
+        "value_name": "Masculino",
+        "values": [
+          {
+            "id": "18549360",
+            "name": "Masculino",
+            "struct": null
+          }
+        ],
+        "value_type": "list"
+      },
+      {
+        "id": "FOOTWEAR_TECHNOLOGIES",
+        "name": "Tecnologias do calçado",
+        "value_id": "8610808",
+        "value_name": "Nike Air",
+        "values": [
+          {
+            "id": "8610808",
+            "name": "Nike Air",
+            "struct": null
+          }
+        ],
+        "value_type": "string"
+      },
+      {
+        "id": "FOOTWEAR_TYPE",
+        "name": "Tipo de calçado",
+        "value_id": "517583",
+        "value_name": "Tênis",
+        "values": [
+          {
+            "id": "517583",
+            "name": "Tênis",
+            "struct": null
+          }
+        ],
+        "value_type": "list"
+      },
+      {
+        "id": "GENDER",
+        "name": "Gênero",
+        "value_id": "339666",
+        "value_name": "Masculino",
+        "values": [
+          {
+            "id": "339666",
+            "name": "Masculino",
+            "struct": null
+          }
+        ],
+        "value_type": "list"
+      },
+      {
+        "id": "INTERIOR_MATERIALS",
+        "name": "Materiais do interior",
+        "value_id": "5823845",
+        "value_name": "Tecido",
+        "values": [
+          {
+            "id": "5823845",
+            "name": "Tecido",
+            "struct": null
+          }
+        ],
+        "value_type": "string"
+      },
+      {
+        "id": "ITEM_CONDITION",
+        "name": "Condição do item",
+        "value_id": "2230581",
+        "value_name": "Usado",
+        "values": [
+          {
+            "id": "2230581",
+            "name": "Usado",
+            "struct": null
+          }
+        ],
+        "value_type": "list"
+      },
+      {
+        "id": "LINE",
+        "name": "Linha",
+        "value_id": "45138",
+        "value_name": "Air Force",
+        "values": [
+          {
+            "id": "45138",
+            "name": "Air Force",
+            "struct": null
+          }
+        ],
+        "value_type": "string"
+      },
+      {
+        "id": "MIDSOLE_MATERIALS",
+        "name": "Materiais da entressola",
+        "value_id": "8576918",
+        "value_name": "Espuma",
+        "values": [
+          {
+            "id": "8576918",
+            "name": "Espuma",
+            "struct": null
+          }
+        ],
+        "value_type": "string"
+      },
+      {
+        "id": "MODEL",
+        "name": "Modelo",
+        "value_id": "34546",
+        "value_name": "1",
+        "values": [
+          {
+            "id": "34546",
+            "name": "1",
+            "struct": null
+          }
+        ],
+        "value_type": "string"
+      },
+      {
+        "id": "OUTSOLE_MATERIALS",
+        "name": "Materiais da sola",
+        "value_id": "930364",
+        "value_name": "Borracha",
+        "values": [
+          {
+            "id": "930364",
+            "name": "Borracha",
+            "struct": null
+          }
+        ],
+        "value_type": "string"
+      },
+      {
+        "id": "RECOMMENDED_USES",
+        "name": "Usos recomendados",
+        "value_id": "6694766",
+        "value_name": "Basquete",
+        "values": [
+          {
+            "id": "6694766",
+            "name": "Basquete",
+            "struct": null
+          }
+        ],
+        "value_type": "string"
+      },
+      {
+        "id": "SHAFT_TYPE",
+        "name": "Tipo de cano",
+        "value_id": "1164226",
+        "value_name": "Curto",
+        "values": [
+          {
+            "id": "1164226",
+            "name": "Curto",
+            "struct": null
+          }
+        ],
+        "value_type": "list"
+      },
+      {
+        "id": "SIZE_GRID_ID",
+        "name": "ID da guia de tamanhos",
+        "value_id": null,
+        "value_name": "210002",
+        "values": [
+          {
+            "id": null,
+            "name": "210002",
+            "struct": null
+          }
+        ],
+        "value_type": "grid_id"
+      },
+      {
+        "id": "VERSION",
+        "name": "Versão",
+        "value_id": "8580064",
+        "value_name": "'07",
+        "values": [
+          {
+            "id": "8580064",
+            "name": "'07",
+            "struct": null
+          }
+        ],
+        "value_type": "string"
+      },
+      {
+        "id": "WIDTH_TYPE",
+        "name": "Tipo de largura",
+        "value_id": "15665144",
+        "value_name": "Padrão",
+        "values": [
+          {
+            "id": "15665144",
+            "name": "Padrão",
+            "struct": null
+          }
+        ],
+        "value_type": "string"
+      },
+      {
+        "id": "WITH_PADDED_COLLAR",
+        "name": "Com cano acolchoado",
+        "value_id": "242085",
+        "value_name": "Sim",
+        "values": [
+          {
+            "id": "242085",
+            "name": "Sim",
+            "struct": null
+          }
+        ],
+        "value_type": "boolean"
+      }
+    ],
+    "warnings": [],
+    "listing_source": "",
+    "variations": [
+      {
+        "id": 190927890543,
+        "price": 560,
+        "attribute_combinations": [
+          {
+            "id": "COLOR",
+            "name": "Cor",
+            "value_id": "2450295",
+            "value_name": "Preto",
+            "values": [
+              {
+                "id": "2450295",
+                "name": "Preto",
+                "struct": null
+              }
+            ],
+            "value_type": "string"
+          },
+          {
+            "id": "FABRIC_DESIGN",
+            "name": "Desenho do tecido",
+            "value_id": "930483",
+            "value_name": "Lisa",
+            "values": [
+              {
+                "id": "930483",
+                "name": "Lisa",
+                "struct": null
+              }
+            ],
+            "value_type": "string"
+          },
+          {
+            "id": "SIZE",
+            "name": "Tamanho",
+            "value_id": "40 BR",
+            "value_name": "40 BR",
+            "values": [
+              {
+                "id": "40 BR",
+                "name": "40 BR",
+                "struct": null
+              }
+            ],
+            "value_type": "string"
+          }
+        ],
+        "available_quantity": 1,
+        "sold_quantity": 0,
+        "sale_terms": [],
+        "picture_ids": [
+          "848143-MLB92828777815_092025",
+          "899413-MLB92828926457_092025",
+          "733147-MLB92828777817_092025",
+          "678623-MLB92828787605_092025"
+        ],
+        "seller_custom_field": null,
+        "catalog_product_id": null,
+        "inventory_id": null,
+        "item_relations": [],
+        "user_product_id": "MLBU3428131929"
+      }
+    ],
+    "status": "active",
+    "sub_status": [],
+    "tags": [
+      "test_item",
+      "immediate_payment",
+      "cart_eligible"
+    ],
+    "warranty": "Sem garantia",
+    "catalog_product_id": "MLB26989067",
+    "domain_id": "MLB-SNEAKERS",
+    "seller_custom_field": null,
+    "parent_item_id": null,
+    "differential_pricing": null,
+    "deal_ids": [],
+    "automatic_relist": false,
+    "date_created": "2025-09-19T05:50:24.954Z",
+    "last_updated": "2025-09-19T12:34:22.209Z",
+    "health": null,
+    "catalog_listing": false,
+    "item_relations": [],
+    "channels": [
+      "marketplace"
+    ]
+  }
+]

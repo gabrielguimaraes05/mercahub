@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  mercahub-dev:
+    build:
+      context: ..
+      dockerfile: automation/dev/Dockerfile
+    container_name: mercahub-dev
+    ports:
+      - "8080:8080"
+    volumes:
+      - ../:/app
+      - ~/.m2:/root/.m2

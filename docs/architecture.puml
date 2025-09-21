@@ -1,0 +1,63 @@
+@startuml
+title Mercahub API Overview
+
+skinparam componentStyle rectangle
+
+rectangle "Adapters In" {
+  component "ItemController" as Controller
+  component "GlobalExceptionHandler" as Handler
+  component "ItemMapper" as Mapper
+}
+
+rectangle "Application (Use Cases)" {
+  component "GetItemUseCase" as GetUseCase
+  component "ListItemsUseCase" as ListUseCase
+}
+
+rectangle "Domain" {
+  component "Item" as ItemDomain
+  component "Attribute / Variation / etc." as OtherDomain
+}
+
+rectangle "Ports" {
+  interface "ItemRepository" as ItemPort
+}
+
+rectangle "Adapters Out" {
+  component "JsonItemRepository" as JsonRepo
+  database "items.json" as ItemsJson
+}
+
+Controller --> GetUseCase
+Controller --> ListUseCase
+Controller --> Mapper
+
+Handler ..> Controller : cross-cutting concerns
+
+GetUseCase --> ItemPort
+ListUseCase --> ItemPort
+
+ItemPort <.. JsonRepo
+JsonRepo --> ItemsJson : read
+
+GetUseCase --> ItemDomain
+ListUseCase --> ItemDomain
+
+Mapper --> ItemDomain
+Mapper --> "DTOs"
+
+OtherDomain ..> ItemDomain
+
+note right of Controller
+  REST endpoints:
+  - GET /item/{id}
+  - GET /items?page=&size=
+end note
+
+note bottom of JsonRepo
+  Loads catalog on startup,
+  keeps data in-memory,
+  indexes by id.
+end note
+
+@enduml
