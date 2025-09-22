@@ -4,6 +4,10 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.PropertyNamingStrategies;
+import com.mercahub.adapters.in.web.dto.LocationElementDto;
+import com.mercahub.adapters.in.web.dto.SellerAddressDto;
+import com.mercahub.domain.SellerAddress;
+
 import org.junit.jupiter.api.Test;
 
 public class SellerAddressDtoTest {
@@ -14,27 +18,25 @@ public class SellerAddressDtoTest {
   @Test
   void deveManterValoresNosGettersEEquals() {
 
-    SellerAddress dto =
-        new SellerAddress()
-            .addressLine("Rua Teste, 415")
-            .zipCode("13000000")
-            .city(new LocationElement())
-            .state(new LocationElement())
-            .country(new LocationElement())
-            .latitude(Double.MIN_NORMAL)
-            .longitude(Double.MIN_NORMAL)
-            .id(Long.MIN_VALUE);
+    SellerAddressDto dto = new SellerAddressDto()
+            .setAddressLine("Rua Teste, 415")
+            .setZipCode("13000000")
+            .setCity(new LocationElementDto())
+            .setState(new LocationElementDto())
+            .setCountry(new LocationElementDto())
+            .setLatitude(Double.MIN_NORMAL)
+            .setLatitude(Double.MIN_NORMAL)
+            .setId(Long.MIN_VALUE);
 
-    SellerAddress copia =
-        new SellerAddress()
-            .addressLine("Rua Teste, 415")
-            .zipCode("13000000")
-            .city(new LocationElement())
-            .state(new LocationElement())
-            .country(new LocationElement())
-            .latitude(Double.MIN_NORMAL)
-            .longitude(Double.MIN_NORMAL)
-            .id(Long.MIN_VALUE);
+    SellerAddressDto copia = new SellerAddressDto()
+            .setAddressLine("Rua Teste, 415")
+            .setZipCode("13000000")
+            .setCity(new LocationElementDto())
+            .setState(new LocationElementDto())
+            .setCountry(new LocationElementDto())
+            .setLatitude(Double.MIN_NORMAL)
+            .setLatitude(Double.MIN_NORMAL)
+            .setId(Long.MIN_VALUE);
 
     assertThat(dto.getId()).isEqualTo(Long.MIN_VALUE);
     assertThat(dto.getAddressLine()).isEqualTo("Rua Teste, 415");
@@ -44,16 +46,15 @@ public class SellerAddressDtoTest {
 
   @Test
   void deveSerializarEmSnakeCase() throws Exception {
-    SellerAddress dto =
-        new SellerAddress()
-            .addressLine("Rua Teste, 415")
-            .zipCode("13000000")
-            .city(new LocationElement())
-            .state(new LocationElement())
-            .country(new LocationElement())
-            .latitude(Double.MIN_NORMAL)
-            .longitude(Double.MIN_NORMAL)
-            .id(Long.MIN_VALUE);
+    SellerAddressDto dto = new SellerAddressDto()
+            .setAddressLine("Rua Teste, 415")
+            .setZipCode("13000000")
+            .setCity(new LocationElementDto())
+            .setState(new LocationElementDto())
+            .setCountry(new LocationElementDto())
+            .setLatitude(Double.MIN_NORMAL)
+            .setLatitude(Double.MIN_NORMAL)
+            .setId(Long.MIN_VALUE);
 
     String json = mapper.writeValueAsString(dto);
 

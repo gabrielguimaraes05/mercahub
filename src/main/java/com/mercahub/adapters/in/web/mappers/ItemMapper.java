@@ -1,9 +1,10 @@
 package com.mercahub.adapters.in.web.mappers;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.mercahub.adapters.in.web.dto.ItemDto;
+import com.mercahub.adapters.in.web.dto.ItemSummaryDto;
 import com.mercahub.domain.Item;
-import com.mercahub.dto.ItemDto;
-import com.mercahub.dto.ItemSummaryDto;
+
 import org.springframework.stereotype.Component;
 
 @Component

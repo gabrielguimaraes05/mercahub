@@ -1,14 +1,13 @@
 package com.mercahub.adapters.in.web;
 
+import com.mercahub.adapters.in.web.dto.ItemDto;
+import com.mercahub.adapters.in.web.dto.ItemSummaryDto;
 import com.mercahub.adapters.in.web.errors.InternalServerException;
 import com.mercahub.adapters.in.web.errors.ItemNotFoundException;
 import com.mercahub.adapters.in.web.mappers.ItemMapper;
-import com.mercahub.api.ItemApi;
 import com.mercahub.application.GetItemUseCase;
 import com.mercahub.application.ListItemsUseCase;
 import com.mercahub.domain.Item;
-import com.mercahub.dto.ItemDto;
-import com.mercahub.dto.ItemSummaryDto;
 import com.mercahub.ports.ItemRepository;
 import java.util.List;
 import org.springframework.http.ResponseEntity;
@@ -18,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class ItemController implements ItemApi {
+public class ItemController {
 
   private final GetItemUseCase getItemUseCase;
   private final ListItemsUseCase listItemsUseCase;
@@ -30,7 +29,6 @@ public class ItemController implements ItemApi {
     this.itemMapper = itemMapper;
   }
 
-  @Override
   @GetMapping("/item/{id}")
   public ResponseEntity<ItemDto> getItem(@PathVariable String id) {
     Item item = getItemUseCase.execute(id);

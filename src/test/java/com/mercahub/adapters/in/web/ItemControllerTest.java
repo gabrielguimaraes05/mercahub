@@ -8,10 +8,10 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
+import com.mercahub.adapters.in.web.dto.ItemDto;
+import com.mercahub.adapters.in.web.dto.ItemSummaryDto;
 import com.mercahub.adapters.in.web.mappers.ItemMapper;
 import com.mercahub.domain.Item;
-import com.mercahub.dto.ItemDto;
-import com.mercahub.dto.ItemSummaryDto;
 import com.mercahub.ports.ItemRepository;
 import java.time.OffsetDateTime;
 import java.util.Collections;
@@ -77,7 +77,11 @@ class ItemControllerTest {
   void deveRetornarItemQuandoEncontrado() throws Exception {
     String id = "MLB1";
     Item item = criarItem(id);
-    ItemDto dto = new ItemDto().id(id).title(item.getTitle());
+    ItemDto dto = new ItemDto();
+    
+    dto.setId(id);
+    dto.setTitle(item.getTitle());
+
     when(itemRepository.findById(id)).thenReturn(item);
     when(itemMapper.toDto(item)).thenReturn(dto);
 
@@ -99,12 +103,11 @@ class ItemControllerTest {
   @Test
   void deveListarItensPaginados() throws Exception {
     Item item = criarItem("MLB1");
-    ItemSummaryDto dto =
-        new ItemSummaryDto()
-            .id("MLB1")
-            .title(item.getTitle())
-            .category(item.getCategoryId())
-            .price(item.getPrice());
+    ItemSummaryDto dto = new ItemSummaryDto();
+    
+    dto.setId("MLB1");
+    dto.setTitle(item.getTitle());
+    dto.setPrice(item.getPrice());
 
     when(itemRepository.findAll(0, 2)).thenReturn(List.of(item));
     when(itemMapper.toSummaryDto(item)).thenReturn(dto);
@@ -123,10 +126,9 @@ class ItemControllerTest {
     Item item = criarItem("MLB1");
     ItemSummaryDto dto =
         new ItemSummaryDto()
-            .id("MLB1")
-            .title(item.getTitle())
-            .category(item.getCategoryId())
-            .price(item.getPrice());
+            .setId("MLB1")
+            .setTitle(item.getTitle())
+            .setPrice(item.getPrice());
 
     when(itemRepository.findAll(0, 10)).thenReturn(List.of(item));
     when(itemMapper.toSummaryDto(item)).thenReturn(dto);

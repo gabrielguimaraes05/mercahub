@@ -7,13 +7,13 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.ArgumentMatchers.anyInt;
 import static org.mockito.Mockito.when;
 
+import com.mercahub.adapters.in.web.dto.ItemDto;
+import com.mercahub.adapters.in.web.dto.ItemSummaryDto;
 import com.mercahub.adapters.in.web.errors.ItemNotFoundException;
 import com.mercahub.adapters.in.web.mappers.ItemMapper;
 import com.mercahub.application.GetItemUseCase;
 import com.mercahub.application.ListItemsUseCase;
 import com.mercahub.domain.Item;
-import com.mercahub.dto.ItemDto;
-import com.mercahub.dto.ItemSummaryDto;
 import com.mercahub.ports.ItemRepository;
 import java.util.Arrays;
 import java.util.List;
