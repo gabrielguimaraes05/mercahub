@@ -65,7 +65,7 @@ GET /items?page=0&size=10
 - Swagger UI: `http://localhost:8080/swagger-ui/index.html`
 - Esquema JSON: `http://localhost:8080/v3/api-docs`
 
-O schema expõe dois modelos principais:
+Quando a aplicação estiver em execução, acesse o Swagger UI para explorar e testar os endpoints interativamente. O schema expõe dois modelos principais:
 
 - `ItemDto`: representação completa do item.
 - `ItemSummary`: usado na listagem e contém apenas `id`, `title`, `category`, `price`.
@@ -90,74 +90,9 @@ O plugin `openapi-generator-maven-plugin` roda na fase `generate-sources`, produ
 
 - Persistir itens em banco real (em vez do JSON estático).
 - Adicionar filtros de busca e ordenação na listagem.
-- Cobrir endpoints com testes de integração (MockMvc ou RestAssured).
  
 ## Diagrama
 
-O diagrama abaixo resume o fluxo principal da API. O arquivo PlantUML encontra-se em `docs/architecture.puml`.
+O diagrama abaixo resume o fluxo principal da API. O arquivo PlantUML foi renderizado em PNG está em `docs/architecture.png`.
 
-```plantuml
-@startuml
-title Mercahub API Overview
-
-skinparam componentStyle rectangle
-
-rectangle "Adapters In" {
-  component "ItemController" as Controller
-  component "GlobalExceptionHandler" as Handler
-  component "ItemMapper" as Mapper
-}
-
-rectangle "Application (Use Cases)" {
-  component "GetItemUseCase" as GetUseCase
-  component "ListItemsUseCase" as ListUseCase
-}
-
-rectangle "Domain" {
-  component "Item" as ItemDomain
-  component "Attribute / Variation / etc." as OtherDomain
-}
-
-rectangle "Ports" {
-  interface "ItemRepository" as ItemPort
-}
-
-rectangle "Adapters Out" {
-  component "JsonItemRepository" as JsonRepo
-  database "items.json" as ItemsJson
-}
-
-Controller --> GetUseCase
-Controller --> ListUseCase
-Controller --> Mapper
-
-Handler ..> Controller : cross-cutting concerns
-
-GetUseCase --> ItemPort
-ListUseCase --> ItemPort
-
-ItemPort <.. JsonRepo
-JsonRepo --> ItemsJson : read
-
-GetUseCase --> ItemDomain
-ListUseCase --> ItemDomain
-
-Mapper --> ItemDomain
-Mapper --> "DTOs"
-
-OtherDomain ..> ItemDomain
-
-note right of Controller
-  REST endpoints:
-  - GET /item/{id}
-  - GET /items?page=&size=
-end note
-
-note bottom of JsonRepo
-  Loads catalog on startup,
-  keeps data in-memory,
-  indexes by id.
-end note
-
-@enduml
-```
+![Arquitetura Mercahub](docs/architecture.png)
